@@ -16,7 +16,7 @@ const db = new sqlite3.Database(dbPath, (err) => {
     }
 });
 
-// Your existing endpoint for fetching data
+//existing endpoint for fetching data
 app.get('/api/data', (req, res) => {
     // Fetch data from the database and send it as a response
     const selectQuery = 'SELECT * FROM engine_data';
