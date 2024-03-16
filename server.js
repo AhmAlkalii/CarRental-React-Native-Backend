@@ -16,6 +16,7 @@ const db = new sqlite3.Database(dbPath, (err) => {
     }
 });
 
+
 // Endpoint for fetching OpenAI API key
 app.get('/api/openai-api-key', (req, res) => {
     console.log('Request to /openai-api-key');
